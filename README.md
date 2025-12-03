@@ -43,6 +43,10 @@ $$
 - Obtaining nuclear trajectories with machine learning force field.
 - Training DeepH model to obtain the electronic Hamiltonian in atomic orbital basis. 
 
+$$
+	S_{\mathrm{MO}}(t_{1},t_{2}) = C(t_{1})\ S_{\mathrm{AO}}(t_{1},t_{2})\ C^{*}(t_{2})
+$$
+
 ### Workflow
 
 
