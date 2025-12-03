@@ -16,7 +16,7 @@ i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij
 $$
 
 $$
-d_{ij}(R(t))=-i\hbar\langle\Phi_i|\tfrac{\partial}{\partial t}|\Phi_j\rangle
+d_{ij}(R(t))=-i\hbar\langle\Phi_i | \tfrac{\partial}{\partial t} | \Phi_j\rangle
 $$
 
 $$
