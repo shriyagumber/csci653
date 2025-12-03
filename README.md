@@ -12,7 +12,7 @@ In quantum dots, charge carriers are strongly confined within a nanoscale volume
 Equation for the evolution of non-adiabatic dynamics:
 
 $$
-i\hbar \ \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
+i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
 $$
 
 ## Simulation methods and algorithms
