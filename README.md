@@ -38,6 +38,8 @@ $$
 	<img src="https://github.com/shriyagumber/csci653/blob/746ee142055c15241d15b1deb7ed8cb9f184bc67/visualization/211446_0_En_100932-1_Fig1_HTML.webp" width="550" height="450">
 </p>
 
+### Proposal
+
 - Obtaining nuclear trajectories with machine learning force field.
 - Training DeepH model to obtain the electronic Hamiltonian in atomic orbital basis. 
 
