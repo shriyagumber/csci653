@@ -111,7 +111,7 @@ To be done:
 - Recombination results
 
   
-# Classical v/s Machine Learning Force Fields (MLFF)
+# Theory
 
 ### Classical Force Field
 In MD simulations, the dynamics of a molecular system are studied by calculating the forces acting on each atom for a given configuration. These forces are used to integrate the Newtonian equations of motion numerically. This integration, performed at each timestep, advances the simulation, allowing us to observe how the positions and velocities of atoms evolve over time. This method enables the study of molecular behavior under various conditions, like changes in temperature or pressure.
