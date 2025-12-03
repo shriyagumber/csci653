@@ -6,6 +6,13 @@ Do Auger processes contribute significantly to the charge relaxation in perovski
 
 In quantum dots, charge carriers are strongly confined within a nanoscale volume. This confinement enhances Coulomb interactions between electrons and holes, making multi-particle scattering far more efficient than in bulk semiconductors. Under strong photoexcitation, high carrier densities generate multi-exciton states, most commonly biexcitons. In such states, one carrier can recombine non-radiatively and transfer its energy to another carrier through an Auger process. Identifying and quantifying this contribution is critical for understanding carrier lifetimes and optimizing optoelectronic applications of perovskite quantum dots.
 
+
+## Methods used
+
+The non-adiabatic coupling (NAC) reflects inelastic electron-phonon scattering. NAC is calculated numerically as the overlap of Kohn-Sham orbitals j and k at sequential time steps using the CA-NAC package3:
+d_ij=-iℏ⟨φ_i│∂/∂t│φ_j ⟩=-iℏ⟨φ_i│∇_R│φ_j ⟩ R ̇
+
+
 ## Simulation methods and algorithms
 
 In bulk semiconductor materials, surface hopping has been widely used to simulate charge relaxation and recombination on ultrafast timescales, where electron–phonon interactions dominate. In nanoscale materials such as quantum dots, strong Coulomb interactions coexist with electron–phonon couplings, and both must be considered.
