@@ -9,9 +9,9 @@ Non-adiabatic molecular dynamics requires accurate time-dependent electronic Ham
 
 # Non-adiabatic molecular dynamics and Machine Learning Hamiltonian
 
-Quantum-classical simulation is performed to model non-adiabatic molecular dynamics. Nuclear motion is evolved classicaly with Newton's equation of motion. And electronic motion is evolved quantum mechanically.
+In NA-MD, the dynamics are performed within a quantum–classical framework: the nuclei move classically on potential energy surfaces, while the electronic degrees of freedom evolve quantum mechanically through the time-dependent Schrödinger equation.
 
-At fixed nuclear position, electronic degree of freedom is solved using time-dependent Schrödinger equation. The following equation of motion is evolved:
+At fixed nuclear position, electronic degree of freedom is solved by evolving the following equation of motion:
 
 $$
 i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
@@ -34,16 +34,11 @@ d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Del
 \Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
 $$
 
-$$ 
-=\frac{1}{2\\Delta t}
-\left(
-\langle 
-\psi_i(t+\Delta t)\|\\psi_j(t+\Delta t)\rangle - \langle \psi_i(t+\Delta t)\|\\psi_j(t)\rangle + \langle \psi_i(t)\|\\psi_j(t+\Delta t)\rangle -
-\langle \psi_i(t)\|\\psi_j(t)\rangle
-\right)
-$$
+To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales if performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties, large systems are required. 
 
-To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales if performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties, large systems are required. DeepH: ML architecture for training a neural network to map atomic positions to DFT Hamiltonian matrix.
+DeepH: ML architecture for training a neural network to map atomic positions to DFT Hamiltonian matrix.
+
+
 
 
 ### Workflow
