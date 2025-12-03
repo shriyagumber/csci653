@@ -10,48 +10,9 @@ In quantum dots, charge carriers are strongly confined within a nanoscale volume
 ## Methods used
 
 $$
-i\hbar\, \frac{d c_i(t)}{dt}
-=
-\sum_{j=0}^{N_b - 1}
-\left( E_i \delta_{ij} + d_{ij} \right)
-c_j(t)
+i\hbar\, \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
 $$
 
-$$
-d_{ij}(R(t)) 
-= 
--i\hbar \left\langle \Phi_i \,\middle|\, 
-\frac{\partial}{\partial t} 
-\,\middle|\, \Phi_j \right\rangle
-$$
-
-For the two Slater determinants  
-$\Phi_i = \hat{A}[{\phi}_{1}\ldots{\phi}_{m}\ldots{\phi}_{n}\ldots{\phi}_{N}]$ and  
-$\Phi_j = \hat{A}[{\phi}_{1}\ldots{\phi}_{p}\ldots{\phi}_{q}\ldots{\phi}_{N}]$,  
-the charge–charge interaction is:
-
-$$
-V_{ij} = \langle \Phi_i | \hat{V} | \Phi_j \rangle
-= \langle mn|pq \rangle - \langle nm|pq \rangle
-$$
-
-where $\langle mn|pq \rangle$ is the Coulomb integral.  
-Within the PAW methodology (Kresse *et al.*), it is:
-
-$$
-\langle mn|pq \rangle =
-\frac{e^2}{2}
-\int dr_1\, dr_2\;
-\phi_m^*(r_1) \phi_n^*(r_2)
-\frac{1}{r_{12}}
-\phi_p(r_1)\phi_q(r_2)
-$$
-
-The Hamiltonian becomes:
-
-$$
-H = E_i\,\delta_{ij} + d_{ij} + V_{ij}
-$$
 ## Simulation methods and algorithms
 
 In bulk semiconductor materials, surface hopping has been widely used to simulate charge relaxation and recombination on ultrafast timescales, where electron–phonon interactions dominate. In nanoscale materials such as quantum dots, strong Coulomb interactions coexist with electron–phonon couplings, and both must be considered.
