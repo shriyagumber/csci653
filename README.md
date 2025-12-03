@@ -9,8 +9,28 @@ In quantum dots, charge carriers are strongly confined within a nanoscale volume
 
 ## Methods used
 
-The non-adiabatic coupling (NAC) reflects inelastic electron-phonon scattering. NAC is calculated numerically as the overlap of Kohn-Sham orbitals j and k at sequential time steps using the CA-NAC package3:
-d_ij=-iℏ⟨φ_i│∂/∂t│φ_j ⟩=-iℏ⟨φ_i│∇_R│φ_j ⟩ R ̇
+\begin{equation}
+\Phi_i(1, 2, \ldots, N) = \hat{A}[{\phi}_{i_1}(1){\phi}_{i_2}(2) \ldots {\phi}_{i_N}(N)]
+\end{equation}
+
+\begin{equation}
+d_{ij}(R(t)) = - i\hbar \langle \Phi_i \left| \frac{\partial}{\partial t} \right| \Phi_j \rangle
+\end{equation}
+
+For instance, for the given two SDs: \(\Phi_i = \hat{A}[{\phi}_{1} \ldots {\phi}_{m} \ldots {\phi}_{n} \ldots {\phi}_{N}] \) and \(\Phi_j = \hat{A}[{\phi}_{1} \ldots {\phi}_{p} \ldots {\phi}_{q} \ldots {\phi}_{N}] \), the charge-charge interaction is given by: 
+
+\begin{equation}
+V_{ij} = \langle \Phi_i | \hat{V} | \Phi_j \rangle = \langle mn|pq \rangle - \langle mn|pq \rangle
+\end{equation}
+where \(\langle mn|pq \rangle\) is the coulomb integral. Coulombic tetradic tensor is evaluated within the Projector augmented wave (PAW) methodology, as proposed by Kresse and co-workers.\cite{10.1063/1.5065504, 10.1063/1.1926272} It can be written as:
+
+\begin{equation}
+\langle mn|pq \rangle = \frac{e^2}{2} \int dr_1 dr_2 \phi_m^*(r_1) \phi_n^*(r_2) r_{12}^{-1} \phi_p(r_1) \phi_q(r_2)
+\end{equation}
+After addition of the coulomb matrix elements, Hamiltonian can be rewritten as:
+\begin{equation}
+H = E_i \delta_{ij} + d_{ij} + V_{ij}
+\end{equation}
 
 
 ## Simulation methods and algorithms
