@@ -20,7 +20,7 @@ $$
 i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
 $$
 
-The non-adiabatic coupling represents the electron-phonon coupling between electronic states:
+NAC quantifies how nuclear motion mixes the electronic states. The non-adiabatic coupling represents the electron-phonon coupling between electronic states:
 
 $$
 d_{ij}(R(t))=-i\hbar\langle\Psi_i | \tfrac{\partial}{\partial t} | \Psi_j\rangle
