@@ -10,15 +10,19 @@ In quantum dots, charge carriers are strongly confined within a nanoscale volume
 ## Methods used
 
 $$
-\Phi_i(1, 2, \ldots, N) =
-\hat{A}\big[{\phi}_{i_1}(1)\,{\phi}_{i_2}(2)\,\ldots\,{\phi}_{i_N}(N)\big]
+i\hbar\, \frac{d c_i(t)}{dt}
+=
+\sum_{j=0}^{N_b - 1}
+\left( E_i \delta_{ij} + d_{ij} \right)
+c_j(t)
 $$
 
 $$
-d_{ij}(R(t)) =
-- i\hbar \left\langle \Phi_i \left|
-\frac{\partial}{\partial t}
-\right| \Phi_j \right\rangle
+d_{ij}(R(t)) 
+= 
+-i\hbar \left\langle \Phi_i \,\middle|\, 
+\frac{\partial}{\partial t} 
+\,\middle|\, \Phi_j \right\rangle
 $$
 
 For the two Slater determinants  
