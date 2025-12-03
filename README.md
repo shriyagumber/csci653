@@ -79,7 +79,7 @@ To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix 
         │  Analyze														  	  					  		  │ 
 		│		- defect-concentration dependent recombination  	   					  			  	  │	
 		│		- nonradiative processes						  							  			  │
-        └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
+        └─────────────────────────────────────────────────────────────────────────────────────────────────┘
          
 		 
 # Results- MLFF
