@@ -4,11 +4,8 @@ Name- Shriya Gumber
 
 USC ID- 1665235263
 
-For the final project of CSCI653- 
-Machine Learning Hamiltonian for C-defect modified 2D- graphitic Carbon Nitride simulated using machine learning force field. 
-
 # Problem Description
-Non-adiabatic molecular dynamics requires accurate time-dependent electronic Hamiltonians, but ab initio quantum chemical calculations are often too expensive to compute at every nuclear geometry. The problem is to learn the electronic Hamiltonian, energies, couplings, and derivative terms using machine learning models trained on high quality quantum data. Once learned, this ML Hamiltonian enables fast, stable, and accurate non-adiabatic dynamics across long trajectories and high-dimensional systems.
+Non-adiabatic molecular dynamics requires accurate time-dependent electronic Hamiltonians, but ab initio quantum chemical calculations are often too expensive to compute at every nuclear geometry. The problem is to learn the electronic Hamiltonian, energies, couplings, and derivative terms using machine learning models trained on high quality quantum data. Once learned, this ML Hamiltonian enables fast, stable, and accurate non-adiabatic dynamics across long trajectories and high-dimensional systems. Application on C-defect modified 2D- graphitic Carbon Nitride. 
 
 # Non-adiabatic molecular dynamics and Machine Learning Hamiltonian
 
