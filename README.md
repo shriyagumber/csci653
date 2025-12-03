@@ -15,6 +15,10 @@ $$
 i\hbar \frac{d c_i(t)}{dt} = \sum_{j=0}^{N_b - 1} \left( E_i \delta_{ij} + d_{ij} \right) c_j(t)
 $$
 
+$$
+d_{ij} \left( Rt\right) = -i\hbar 
+$$
+
 ## Simulation methods and algorithms
 
 In bulk semiconductor materials, surface hopping has been widely used to simulate charge relaxation and recombination on ultrafast timescales, where electron–phonon interactions dominate. In nanoscale materials such as quantum dots, strong Coulomb interactions coexist with electron–phonon couplings, and both must be considered.
