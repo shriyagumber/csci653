@@ -34,6 +34,7 @@ d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Del
 \Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
 $$
 
+https://github.com/shriyagumber/csci653/blob/746ee142055c15241d15b1deb7ed8cb9f184bc67/visualization/211446_0_En_100932-1_Fig1_HTML.webp
 
 - Obtaining nuclear trajectories with machine learning force field.
 - Training DeepH model to obtain the electronic Hamiltonian in atomic orbital basis. 
