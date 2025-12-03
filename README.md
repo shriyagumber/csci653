@@ -19,6 +19,10 @@ $$
 d_{ij}(R(t))=-i\hbar\langle\Phi_i|\tfrac{\partial}{\partial t}|\Phi_j\rangle
 $$
 
+$$
+V_{ij} = \langle \Phi_i | \hat{V} | \Phi_j \rangle = \langle mn | pq \rangle - \langle mq | pn \rangle
+$$
+
 ## Simulation methods and algorithms
 
 In bulk semiconductor materials, surface hopping has been widely used to simulate charge relaxation and recombination on ultrafast timescales, where electron–phonon interactions dominate. In nanoscale materials such as quantum dots, strong Coulomb interactions coexist with electron–phonon couplings, and both must be considered.
