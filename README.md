@@ -94,18 +94,18 @@ Classical force fields provide a reasonable description of chemical interactions
 ### Machine Learning Force Fields
 In the domain of Machine Learning Force Fields (MLFF), the fundamental concept revolves around devising an analytical expression that directly correlates the atomic configuration of a system with its potential energy. This approach is distinctively characterized by its lack of inherent assumptions or predefined notions regarding the nature of chemical bonds or atomic interactions. Unlike classical force fields, which rely on fixed functional forms and parameters to describe interactions based on empirical data or simpler quantum mechanical calculations, MLFFs adopt a more flexible and data-driven methodology. They learn from extensive datasets, often derived from high-level ab initio (first principles) calculations, to accurately predict potential energy landscapes. This methodology allows MLFFs to capture complex, non-linear interactions that are typically challenging for classical force fields to model accurately. As a result, MLFFs significantly narrow the gap between the high accuracy typical of ab initio methods and the computational efficiency characteristic of classical force fields. By doing so, they offer a powerful alternative that combines the best of both worlds: the precision of quantum mechanics-based simulations and the scalability and speed of classical approaches. This advancement holds immense promise for the study of complex molecular systems where traditional methods may fall short.
 
-# Training
+
+# Results- MLFF
+
+### Training
+
 Dataset Information: ~30,000 data points collected from ab initio moleclar dynamics (AIMD) within the framework of density functional theory (DFT), at varied temperature: from 100K to 1200K. 
 The DFT calculations are done using the GGA-PBE approximation as implemented in the VASP software. 
 
 Trained on a deep learning network from DeepMD package. 
 https://github.com/deepmodeling/deepmd-kit
 
-GPU-accelerated training
-
-<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
-
-# Results- MLFF
+### Visualization
 
 Trajectory at every 10 picoseconds, over the total dynamics of 1 nanosecond is visualized using ovito software:
 
@@ -114,6 +114,9 @@ https://github.com/shriyagumber/csci596/assets/84539282/ea8202f1-8f9e-4f0e-bc3a-
 https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-1762fc705ff6
 
 https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-bb24f5cf095d
+
+
+<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
 
 # Application
 The accuracy of DFT with the efficiency of classical force field. 
