@@ -23,7 +23,7 @@ $$
 The non-adiabatic coupling represents the electron-phonon coupling between electronic states:
 
 $$
-d_{ij}(R(t))=-i\hbar\langle\Phi_i | \tfrac{\partial}{\partial t} | \Phi_j\rangle
+d_{ij}(R(t))=-i\hbar\langle\Psi_i | \tfrac{\partial}{\partial t} | \Psi_j\rangle
 $$
 
 NAC is based on overlap of two pseudowave functions at adjacent timesteps:
