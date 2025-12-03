@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --job-name=27-train
+#SBATCH --account=prezhdo_176
+#SBATCH --partition=shared
+#SBATCH --nodes=4
+#SBATCH --ntasks=64
+#SBATCH --cpus-per-task=1
+#SBATCH --time=48:00:00
+#SBATCH --output=out_%j.log
+#SBATCH --error=out_%j.err
+#SBATCH --mem=0
+##SBATCH --exclude=e02-[34-35]
+##SBATCH --constraint="xeon-2650v2"
+
+cd $SLURM_SUBMIT_DIR
+#NP=`cat $SLURM_JOB_NODEFILE | wc -l`
+echo ${SLURM_NTASKS}
+
+module purge
+module load intel/19.0.4
+module load intel-mpi/2019.4.243
+module load intel-mkl/2019.5.281
+module load python
+
+ulimit -s unlimited
+
+eval "$(conda shell.bash hook)"
+#conda init --all
+conda activate deepmd
+
+mpirun -np 1 dp train input.json

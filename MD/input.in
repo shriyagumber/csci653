@@ -1,0 +1,38 @@
+#----------1--------------------
+units           metal
+boundary        p p p
+atom_style      atomic
+timestep        0.001
+neighbor        2.0 bin
+
+#----------2----------------
+#box tilt large
+read_data structure.lammps
+
+mass 1 12.0
+mass 2 14.0 
+write_data 	test.data                    
+
+#----------3-------
+pair_style 	deepmd graph-compress.pb
+pair_coeff 	* *
+
+#----------4-------
+thermo		300
+thermo_style	custom step press pe temp ke
+dump		1 all atom 100 mini.lammpstrj
+min_style	cg
+minimize	1e-15 1e-15 5000 5000
+undump		1
+reset_timestep	0
+
+#-----------5--------
+velocity	all create 300 321456 rot yes dist gaussian 
+
+#-----------6 md-------------
+thermo		1
+thermo_style	custom step press pe temp ke
+dump		1 all atom 1 mini.lammpstrj
+dump_modify     1 pbc yes
+fix		1 all nvt temp 300 300 0.1 
+run		1000000
