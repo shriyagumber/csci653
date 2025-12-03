@@ -82,19 +82,6 @@ To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix 
         └─────────────────────────────────────────────────┬───────────────────────────────────────────────┘
          
 		 
-# Classical v/s Machine Learning Force Fields (MLFF)
-
-### Classical Force Field
-In MD simulations, the dynamics of a molecular system are studied by calculating the forces acting on each atom for a given configuration. These forces are used to integrate the Newtonian equations of motion numerically. This integration, performed at each timestep, advances the simulation, allowing us to observe how the positions and velocities of atoms evolve over time. This method enables the study of molecular behavior under various conditions, like changes in temperature or pressure.
-Ideally, the most accurate way to determine the forces on atoms in a molecular system is by solving the Schrödinger equation (SE), which is the fundamental equation of quantum mechanics. The SE provides a description of how the quantum state of a physical system changes over time.
-However, the SE cannot be solved exactly for systems larger than a few atoms due to its computational complexity. To overcome this, approximate methods are employed. These include techniques like Hartree-Fock and coupled cluster equations of motion (EOM). While these methods can provide a high level of accuracy, they are computationally expensive, especially for large systems, making them impractical for routine simulations of large biomolecules or materials.
-As a result, most MD simulations rely on force fields. A force field is a set of equations and parameters that describe the potential energy of a system as a function of the atomic positions. In a force field, the force on each atom is typically expressed as the sum of bonded interactions (involving bonds, angles, and dihedrals) and non-bonded interactions. Non-bonded interactions include pairwise potentials like the Lennard-Jones (LJ) potential for modeling van der Waals (vdW) forces and Coulomb's law for electrostatic interactions. 
-Classical force fields provide a reasonable description of chemical interactions in a wide range of systems. They are particularly effective for studying large systems over long time scales, where quantum mechanical methods are not feasible. However, the quality of simulations using classical force fields is ultimately limited. They may not capture certain quantum mechanical effects and can be less accurate in systems where electronic effects are significant. 
-
-### Machine Learning Force Fields
-In the domain of Machine Learning Force Fields (MLFF), the fundamental concept revolves around devising an analytical expression that directly correlates the atomic configuration of a system with its potential energy. This approach is distinctively characterized by its lack of inherent assumptions or predefined notions regarding the nature of chemical bonds or atomic interactions. Unlike classical force fields, which rely on fixed functional forms and parameters to describe interactions based on empirical data or simpler quantum mechanical calculations, MLFFs adopt a more flexible and data-driven methodology. They learn from extensive datasets, often derived from high-level ab initio (first principles) calculations, to accurately predict potential energy landscapes. This methodology allows MLFFs to capture complex, non-linear interactions that are typically challenging for classical force fields to model accurately. As a result, MLFFs significantly narrow the gap between the high accuracy typical of ab initio methods and the computational efficiency characteristic of classical force fields. By doing so, they offer a powerful alternative that combines the best of both worlds: the precision of quantum mechanics-based simulations and the scalability and speed of classical approaches. This advancement holds immense promise for the study of complex molecular systems where traditional methods may fall short.
-
-
 # Results- MLFF
 
 ### Training
@@ -116,17 +103,32 @@ https://github.com/shriyagumber/csci596/assets/84539282/b530a264-8ea5-4bec-9c32-
 https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-bb24f5cf095d
 
 
-<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
-
-# Application
-The accuracy of DFT with the efficiency of classical force field. 
-
-The photoexcitated charge decay in such systems happen over the timescale of a few nanoseconds, and to perform the charge dynamics within classical path approximation, trajectories over a few nanoseconds are required, which would be impossible to obtain in large systems using abinitio methods. 
-
 # Future Directions
 
 To be done:
 - MLH training
 - Recombination results
+
+  
+# Classical v/s Machine Learning Force Fields (MLFF)
+
+### Classical Force Field
+In MD simulations, the dynamics of a molecular system are studied by calculating the forces acting on each atom for a given configuration. These forces are used to integrate the Newtonian equations of motion numerically. This integration, performed at each timestep, advances the simulation, allowing us to observe how the positions and velocities of atoms evolve over time. This method enables the study of molecular behavior under various conditions, like changes in temperature or pressure.
+Ideally, the most accurate way to determine the forces on atoms in a molecular system is by solving the Schrödinger equation (SE), which is the fundamental equation of quantum mechanics. The SE provides a description of how the quantum state of a physical system changes over time.
+However, the SE cannot be solved exactly for systems larger than a few atoms due to its computational complexity. To overcome this, approximate methods are employed. These include techniques like Hartree-Fock and coupled cluster equations of motion (EOM). While these methods can provide a high level of accuracy, they are computationally expensive, especially for large systems, making them impractical for routine simulations of large biomolecules or materials.
+As a result, most MD simulations rely on force fields. A force field is a set of equations and parameters that describe the potential energy of a system as a function of the atomic positions. In a force field, the force on each atom is typically expressed as the sum of bonded interactions (involving bonds, angles, and dihedrals) and non-bonded interactions. Non-bonded interactions include pairwise potentials like the Lennard-Jones (LJ) potential for modeling van der Waals (vdW) forces and Coulomb's law for electrostatic interactions. 
+Classical force fields provide a reasonable description of chemical interactions in a wide range of systems. They are particularly effective for studying large systems over long time scales, where quantum mechanical methods are not feasible. However, the quality of simulations using classical force fields is ultimately limited. They may not capture certain quantum mechanical effects and can be less accurate in systems where electronic effects are significant. 
+
+### Machine Learning Force Fields
+In the domain of Machine Learning Force Fields (MLFF), the fundamental concept revolves around devising an analytical expression that directly correlates the atomic configuration of a system with its potential energy. This approach is distinctively characterized by its lack of inherent assumptions or predefined notions regarding the nature of chemical bonds or atomic interactions. Unlike classical force fields, which rely on fixed functional forms and parameters to describe interactions based on empirical data or simpler quantum mechanical calculations, MLFFs adopt a more flexible and data-driven methodology. They learn from extensive datasets, often derived from high-level ab initio (first principles) calculations, to accurately predict potential energy landscapes. This methodology allows MLFFs to capture complex, non-linear interactions that are typically challenging for classical force fields to model accurately. As a result, MLFFs significantly narrow the gap between the high accuracy typical of ab initio methods and the computational efficiency characteristic of classical force fields. By doing so, they offer a powerful alternative that combines the best of both worlds: the precision of quantum mechanics-based simulations and the scalability and speed of classical approaches. This advancement holds immense promise for the study of complex molecular systems where traditional methods may fall short.
+
+
+
+
+
+<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
+
+
+
 
 
