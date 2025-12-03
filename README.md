@@ -34,12 +34,13 @@ d_{ij}\left(t+\frac{\Delta t}{2}\right) = \left\langle \psi_i\\left(t+\frac{\Del
 \Bigg| \frac{\psi_j(t+\Delta t)-\psi_j(t)}{\Delta t} \right\rangle
 $$
 
+
+- Obtaining nuclear trajectories with machine learning force field.
+- Training DeepH model to obtain the electronic Hamiltonian in atomic orbital basis. 
+
 To perform non-adiabatic dynamics, time-dependent non-adiabatic coupling matrix elements (or Hamiltonian) are required- which involve time-consuming electronic structure calculations, limiting the method to systems composed of hundreds of atoms and picosecond timescales if performed at an ab initio level. In many cases, for example, modeling a defect in a semiconductor exhibiting unique electronic properties, large systems are required. 
 
 DeepH: ML architecture for training a neural network to map atomic positions to DFT Hamiltonian matrix.
-
-
-
 
 ### Workflow
 
