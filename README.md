@@ -85,7 +85,7 @@ $$
 
 ### Electronic Structure Calculation
 
-<img src="visualization/dos_csci653Cropped.png" width="450" height="350">
+<img src="visualization/dos_csci653Cropped.png" width="450" height="380">
 
 ### Training
 
