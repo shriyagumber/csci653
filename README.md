@@ -97,7 +97,7 @@ The DFT calculations are done using the GGA-PBE approximated DFT functional as i
 Trained on a deep learning network from DeepMD package. 
 https://github.com/deepmodeling/deepmd-kit
 
-<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="550" height="450">
+<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="500" height="410">
 
 ### Visualization
 
