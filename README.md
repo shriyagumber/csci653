@@ -117,8 +117,8 @@ Because the machine-learned Hamiltonian is built on the principle of locality, t
 The data generation process is highly parallel once the trajectory along which the Hamiltonian is generated is pre-computed. In surface hopping NA-MD simulations, dynamics along multiple trajectories is averaged. And dynamics along each trajectory can be performed parallely. 
 
 To be done:
-- MLH training
-- Recombination results
+- ML-Hamiltonian training
+- NA-MD simulations to compute non-radiative charge recombination dynamics.
 
   
 # Theory
