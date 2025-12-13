@@ -87,7 +87,9 @@ $$
 
 Three g-C<sub>3</sub>N<sub>4</sub> systems with different concentration of C-defect were studied. The density of states (DOS) for all three systems calculated for the optimized corrugated non-planar geometries is presented below. In all three systems, a shallow trap state close in energy to the valence band edge is identified. This state is more pronounced for the system with the highest defect concentration in the smallest supercell. In comparison, the larger supercells with lower defect concentrations exhibit subtler modifications to the DOS.
 
-<img src="visualization/dos_csci653Cropped.png" width="450" height="380">
+<p align="center">
+	<img src="visualization/dos_csci653Cropped.png" width="450" height="380">
+</p>
 
 ### Training
 
@@ -97,7 +99,9 @@ The DFT calculations are done using the GGA-PBE approximated DFT functional as i
 Trained on a deep learning network from DeepMD package. 
 https://github.com/deepmodeling/deepmd-kit
 
-<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="500" height="410">
+<p align="center">
+	<img src="https://github.com/shriyagumber/csci596/assets/84539282/330452cf-7dac-44d0-8284-d4c09d55bec5" width="500" height="410">
+</p>
 
 ### Visualization
 
