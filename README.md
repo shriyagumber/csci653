@@ -85,6 +85,8 @@ $$
 
 ### Electronic Structure Calculation
 
+Three g-C3N4 systems with different concentration of C-defect were studied. The density of states (DOS) for all three systems calculated for the optimized corrugated non-planar geometries is presented below. In all three systems, a shallow trap state close in energy to the valence band edge is identified. This state is more pronounced for the system with the highest defect concentration in the smallest supercell. In comparison, the larger supercells with lower defect concentrations exhibit subtler modifications to the DOS.
+
 <img src="visualization/dos_csci653Cropped.png" width="450" height="380">
 
 ### Training
