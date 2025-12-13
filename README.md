@@ -112,6 +112,8 @@ https://github.com/shriyagumber/csci596/assets/84539282/409a51d9-7ff9-4f0f-99c4-
 
 # Future Directions
 
+Because the machine-learned Hamiltonian is built on the principle of locality, the training dataset can be generated using a smaller system (84 atoms). This trained model can then be reliably transferred to perform Hamiltonian calculations for significantly larger systems (300+ atoms), as required for this project.
+
 To be done:
 - MLH training
 - Recombination results
